@@ -29,7 +29,7 @@ Zemberek is a Java-based natural language processing (NLP) tool created for the 
 2.  Use the object and library. Some examples.
 
     ```python
-    import turkishnlptool as pyzmbrk
+    import pyzemberek as pyzmbrk
     zmbrk = pyzmbrk.Zemberek()
     zmbrk.addVerb(['tweetlemek','tweetle','tivitle'])
     zmbrk.analyze('tweetleyeyazdım')
