@@ -58,8 +58,8 @@ class Zemberek:
 
     def addVerb(self,noun_dict):
         '''This function allows to add a new verb to dictionary.'''
-        dict = list(map(JString,noun_dict)) + [self.PrimaryPos.Verb, self.SecondaryPos.None_]
-        new_items = self.DictionaryItem(*dict)
+        dct = list(map(JString,noun_dict)) + [self.PrimaryPos.Verb, self.SecondaryPos.None_]
+        new_items = self.DictionaryItem(*dct)
         self.DefaultMorphology.invalidateCache()
         self.DefaultMorphology.getMorphotactics().getStemTransitions().addDictionaryItem(new_items)
 
